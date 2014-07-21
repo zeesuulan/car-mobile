@@ -1,10 +1,19 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
 	<meta charset="UTF-8">
-	<title>asda</title>
+	<title>Document</title>
 </head>
 <body>
-	<ng-view></ng-view>
+	<div ng-view></div>
 </body>
+<script src="js/lib/lib.js"></script>
+<script src="js/controller/c.js"></script>
+<script src="js/directive/d.js"></script>
+<script src="js/service/s.js"></script>
+<script>
+	$(function(){
+		angular.bootstrap(document, ['JT'])
+	})
+</script>
 </html>

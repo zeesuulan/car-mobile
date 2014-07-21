@@ -1,16 +1,13 @@
 {
-  "name": "car.cn",
-  "version": "0.1.0",
-  "devDependencies": {
-    "connect-livereload": "^0.4.0",
-    "grunt": "",
-    "grunt-contrib-connect": "",
-    "grunt-contrib-cssmin": "",
-    "grunt-contrib-jshint": "",
-    "grunt-contrib-less": "",
-    "grunt-contrib-livereload": "",
-    "grunt-contrib-uglify": "",
-    "grunt-contrib-watch": "",
-    "connect-livereload":""
-  }
+	"name": "gruntjs.cn",
+	"version": "0.1.0",
+	"devDependencies": {
+		"grunt": "*",
+		"grunt-contrib-watch": "",
+		"grunt-contrib-concat": "",
+		"grunt-contrib-uglify": "",
+		"grunt-contrib-connect": "",
+		"connect-livereload": "",
+        "json-proxy": ""
+	}
 }
