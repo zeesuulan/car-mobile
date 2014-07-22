@@ -1,8 +1,8 @@
 'use strict'
 angular.module("JT")
-	.controller("c_index", 
+	.controller("c_register", 
 		function($scope, $rootScope) {
-			$rootScope.pageTitle = PAGE_TITLE + "-- 首页"
+			$rootScope.pageTitle = PAGE_TITLE + "-- 激活"
 
 			
 		}

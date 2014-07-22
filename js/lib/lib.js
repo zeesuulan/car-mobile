@@ -240,18 +240,29 @@ g[h];n&&r&&(l[n.name]=r)}q=l}else q=null;else q=null;q=a=q}q&&(b=s(f,{params:e.e
 function(){this.$get=function(){return{}}});n.directive("ngView",x);n.directive("ngView",z);x.$inject=["$route","$anchorScroll","$animate"];z.$inject=["$compile","$controller","$route"]})(window,window.angular);
 //# sourceMappingURL=angular-route.min.js.map
 
+'use strict'
+
 var JT = angular.module("JT", ['ngRoute'])
 
-JT.config(['$routeProvider',
-	function($routeProvider) {
-
-		$routeProvider.
-		when('/index', {
-			templateUrl: 'template/index.html',
-			controller: "c_index"
-		}).
-		otherwise({
-			redirectTo: '/index'
-		});
-	}
-])
+JT.config(function($routeProvider) {
+	$routeProvider.
+	when('/index', {
+		templateUrl: 'template/index.html',
+		controller: "c_index"
+	}).
+	when('/menu', {
+		templateUrl: 'template/menu.html',
+		controller: "c_menu"
+	}).
+	when('/login', {
+		templateUrl: 'template/login.html',
+		controller: "c_login"
+	}).
+	when('/register', {
+		templateUrl: 'template/register.html',
+		controller: "c_register"
+	}).
+	otherwise({
+		redirectTo: '/index'
+	});
+})

@@ -42,8 +42,8 @@ module.exports = function(grunt) {
         livereload: true
       },
       scripts: {
-        files: ['*.html', 'template/*.html', 'js/**/*.js', 'css/*.css'],
-        tasks: ['concat:all'],
+        files: ['*.html', 'template/*.html', 'js/**/*.js', 'css/*.css', 'less/*.less'],
+        tasks: ['concat:all', 'less:all'],
         options: {
           spawn: false,
         },
@@ -64,6 +64,17 @@ module.exports = function(grunt) {
           src: ['js/service/*', '!js/service/s.js'],
           dest: 'js/service/s.js'
         }]
+      }
+    },
+    less: {
+      all: {
+        options: {
+          paths: ["css"],
+          cleancss: true,
+        },
+        files: {
+          "css/main.css": "less/main.less"
+        }
       }
     },
     uglify: {
@@ -90,6 +101,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-less');
 
   // 自定义任务
   grunt.registerTask('default', ['connect:all', 'watch']);
