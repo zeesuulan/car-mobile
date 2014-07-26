@@ -43,7 +43,7 @@ module.exports = function(grunt) {
       },
       scripts: {
         files: ['*.html', 'template/*.html', 'js/**/*.js', 'css/*.css', 'less/*.less'],
-        tasks: ['concat:all', 'less:all'],
+        tasks: ['less:all','concat:all'],
         options: {
           spawn: false,
         },
@@ -63,6 +63,9 @@ module.exports = function(grunt) {
         }, {
           src: ['js/service/*', '!js/service/s.js'],
           dest: 'js/service/s.js'
+        }, {
+          src: ['css/*', '!css/css.css'],
+          dest: 'css/css.css'
         }]
       }
     },

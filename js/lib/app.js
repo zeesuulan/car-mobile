@@ -8,6 +8,22 @@ JT.config(function($routeProvider) {
 		templateUrl: 'template/index.html',
 		controller: "c_index"
 	}).
+	when('/bl', {
+		templateUrl: 'template/booklist.html',
+		controller: "c_bl"
+	}).
+	when('/sb', {
+		templateUrl: 'template/servicebooking.html',
+		controller: "c_sb"
+	}).
+	when('/active', {
+		templateUrl: 'template/active.html',
+		controller: "c_active"
+	}).
+	when('/intro', {
+		templateUrl: 'template/intro.html',
+		controller: "c_intro"
+	}).
 	when('/menu', {
 		templateUrl: 'template/menu.html',
 		controller: "c_menu"
