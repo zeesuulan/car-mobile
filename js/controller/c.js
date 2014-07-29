@@ -10,12 +10,30 @@ angular.module("JT")
 	);
 'use strict'
 angular.module("JT")
+	.controller("c_addcar", 
+		function($scope, $rootScope) {
+			$rootScope.pageTitle = PAGE_TITLE + "-- 增加车辆信息"
+			$rootScope.backURL = "/#/car"
+			$rootScope.showNav = true
+		}
+	);
+'use strict'
+angular.module("JT")
 	.controller("c_bl", 
 		function($scope, $rootScope) {
 			$rootScope.pageTitle = PAGE_TITLE + "-- 预约查询"
 			$rootScope.backURL = "/#/menu"
 			$rootScope.showNav = true
 			
+		}
+	);
+'use strict'
+angular.module("JT")
+	.controller("c_car", 
+		function($scope, $rootScope) {
+			$rootScope.pageTitle = PAGE_TITLE + "-- 车辆信息"
+			$rootScope.backURL = "/#/menu"
+			$rootScope.showNav = true
 		}
 	);
 'use strict'

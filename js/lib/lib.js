@@ -278,6 +278,14 @@ JT.config(function($routeProvider) {
 		templateUrl: 'template/register.html',
 		controller: "c_register"
 	}).
+	when('/car', {
+		templateUrl: 'template/car.html',
+		controller: "c_car"
+	}).
+	when('/addcar', {
+		templateUrl: 'template/addcar.html',
+		controller: "c_addcar"
+	}).
 	otherwise({
 		redirectTo: '/index'
 	});
